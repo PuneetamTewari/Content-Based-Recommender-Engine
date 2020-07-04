@@ -21,7 +21,7 @@ for feature in features:
 #using our defined function for each row of the data set
 data_frame["Combined_feature_string"] = data_frame.apply(Combined_feature_string,axis=1)
 
-#creating new CountVectorizer() object
+#creating new CountVectorizer() instance
 cv = CountVectorizer() 
 
 #Using fit_transform method from countVectorizer class, to get the count matrix from our feature string
